@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+}
+
+.container {
+    text-align: center;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 4px;
+    margin: 20px auto;
+}
+
+.cell{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    font-size: 50px;
+    /* font-size: 2em;
+    width: 100px;
+    height: 100px; */
+}
+
+.cell:hover {
+    background-color: yellow;
+}
+
+#restart{
+    font-size: larger;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px;
+    color: teal;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.players{
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.players button{
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px;
+    color: teal;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.turn{
+    font-size: 30px;
+    font-weight: bolder;
+    color: teal;
+}
+
+.winnerboy{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+h1{
+    font-size: 60px;
+}
