@@ -68,6 +68,7 @@ for (let i = 0; i < cells.length; i++) {
           winnerboy.innerHTML="Player X wins";
           currentPlayer='';
           turn.innerHTML = "";
+          return;
         }
       }
       else if(currentPlayer==='Player2')
@@ -80,6 +81,7 @@ for (let i = 0; i < cells.length; i++) {
           winnerboy.innerHTML="Player O wins";
           currentPlayer='';
           turn.innerHTML = "";
+          return;
         }
       }
       if(count===9){
